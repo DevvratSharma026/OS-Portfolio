@@ -8,7 +8,7 @@ const ACCENT = '#6c8aff'
 const LINKS = [
   { label:'GitHub',   icon:'⌥', href:'https://github.com/DevvratSharma026', color:'#e2e4f0' },
   { label:'LinkedIn', icon:'in', href:'https://www.linkedin.com/in/devvrat-sharma/', color:'#0a66c2' },
-  { label:'Email',    icon:'@',  href:'mailto:devsharma.pcm.2003@gmail.com', color:'#ff6b9d' },
+  { label:'Email', icon:'@', href:'https://mail.google.com/mail/?view=cm&to=devsharma.pcm.2003@gmail.com', color:'#ff6b9d' },
 ]
 
 export default function ContactApp() {
@@ -26,6 +26,7 @@ export default function ContactApp() {
       from_name:  form.name,
       from_email: form.email,
       message:    form.message,
+      reply_to:   form.email,
     },
     'vUhrMRNv5jU94y5yB'      // your Public Key
   )
@@ -67,7 +68,7 @@ export default function ContactApp() {
       <div className="flex gap-3 mb-8">
         {LINKS.map(function(link) {
           return (
-            <a key={link.label} href={link.href}
+            <a key={link.label} href={link.href} target='_blank' rel='noreferrer'
               style={{
                 display:'flex', alignItems:'center', gap:'8px',
                 padding:'8px 16px', borderRadius:'8px',
