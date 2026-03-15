@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import emailjs from '@emailjs/browser'
 
 const MONO   = "'JetBrains Mono', monospace"
 const SANS   = "'Inter', sans-serif"
@@ -7,7 +8,7 @@ const ACCENT = '#6c8aff'
 const LINKS = [
   { label:'GitHub',   icon:'⌥', href:'https://github.com/DevvratSharma026', color:'#e2e4f0' },
   { label:'LinkedIn', icon:'in', href:'https://www.linkedin.com/in/devvrat-sharma/', color:'#0a66c2' },
-  { label:'Email',    icon:'@',  href:'mailto:devsharma.pcm.2003@gamil.com', color:'#ff6b9d' },
+  { label:'Email',    icon:'@',  href:'mailto:devsharma.pcm.2003@gmail.com', color:'#ff6b9d' },
 ]
 
 export default function ContactApp() {
@@ -16,10 +17,30 @@ export default function ContactApp() {
   const [focused, setFocused] = useState(null)
 
   function handleSubmit(e) {
-    e.preventDefault()
+  e.preventDefault()
+
+  emailjs.send(
+    'service_9iad9y5',    // your Service ID
+    'template_gv1vuin',   // your Template ID
+    {
+      from_name:  form.name,
+      from_email: form.email,
+      message:    form.message,
+    },
+    'vUhrMRNv5jU94y5yB'      // your Public Key
+  )
+  .then(function() {
     setSent(true)
-    setTimeout(function() { setSent(false); setForm({ name:'', email:'', message:'' }) }, 3000)
-  }
+    setTimeout(function() {
+      setSent(false)
+      setForm({ name:'', email:'', message:'' })
+    }, 3000)
+  })
+  .catch(function(err) {
+    console.error('EmailJS error:', err)
+    alert('Failed to send. Try emailing directly.')
+  })
+}
 
   function inputStyle(field) {
     return {
