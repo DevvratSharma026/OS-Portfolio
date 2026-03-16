@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://devvratsharma.vercel.app/sitemap.xml
