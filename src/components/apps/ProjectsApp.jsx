@@ -3,6 +3,7 @@ import { useState } from 'react'
 const MONO   = "'JetBrains Mono', monospace"
 const SANS   = "'Inter', sans-serif"
 const ACCENT = '#6c8aff'
+const GITHUB_PROFILE = 'https://github.com/DevvratSharma026'
 
 const PROJECTS = [
   {
@@ -137,7 +138,7 @@ export default function ProjectsApp() {
           Projects
         </h2>
         <p style={{ fontFamily:MONO, fontSize:'11px', color:'rgba(226,228,240,0.38)' }}>
-          2 projects · Built and shipped
+          Projects · Built and shipped
         </p>
       </div>
 
@@ -145,6 +146,15 @@ export default function ProjectsApp() {
         {PROJECTS.map(function(proj, i) {
           return <ProjectCard key={proj.id} project={proj} idx={i} />
         })}
+      </div>
+
+      <div className='mt-2 text-sm text-gray-400' style={{ fontFamily: SANS}}>
+        <div>
+          For more please visit my GitHub: 
+          <button onClick={() => { window.open(GITHUB_PROFILE, '_blank') }} className='text-blue-400 underline'>
+            GitHub
+          </button>
+        </div>
       </div>
     </div>
   )
