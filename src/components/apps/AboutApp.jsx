@@ -7,21 +7,24 @@ const ACCENT2 = '#ff6b9d'
 
 const LINES = [
   { label: 'name',      value: 'Devvrat Sharma' },
-  { label: 'role',      value: 'AI Full Stack Developer' },
-  { label: 'location',  value: 'New Delhi, India' },
+  { label: 'role',      value: 'AI Full Stack Developer & Associate Systems Engineer @IBM' },
+  { label: 'domain',    value: 'Oracle Cloud Middleware' },
+  { label: 'location',  value: 'Bangalore, India' },
   { label: 'education', value: 'B.Tech IT · GGSIPU · 2021–2025' },
   { label: 'certified', value: 'IBM Data Science · AWS GenAI' },
   { label: 'focus',     value: 'Backend · AI · Full-stack' },
 ]
 
 const BIO = [
-  "I'm a AI FullStack Developer from New Delhi who obsesses over two things equally — systems that scale and interfaces that feel alive. I build full-stack products where the backend is tight, the AI is actually useful, and the frontend makes people stop scrolling.",
+  "I'm an Associate System Engineer at IBM India, Bangalore — working in the Oracle Cloud Middleware domain with Oracle SOA Suite, WebLogic Server, and Oracle Integration Cloud. Outside of IBM, I obsess over two things equally — systems that scale and interfaces that feel alive.",
 
-"At IBM, I went deep on data science — pipelines, models, and the messy reality of production data. I left with a certification and a healthy respect for how hard \"simple\" insights are to extract. At a fintech startup, I shipped customer-facing React features under real deadlines, real traffic, and a real PM who had opinions.",
+"At IBM, I started my professional journey in enterprise middleware — the kind of infrastructure that quietly keeps large systems running. Before that, I went deep on data science pipelines and earned an IBM certification, and shipped production-grade React features at a fintech startup under real deadlines, real traffic, and a real PM who had opinions.",
 
-"My recent work lives at the intersection of LLMs and developer tooling. RepoLensAI lets you drop a GitHub repository and get an intelligent breakdown of the entire codebase — powered by Groq's LLaMA-3 70B. It's the tool I wished existed when I was reading someone else's spaghetti code at 2am.",
+"My personal work lives at the intersection of LLMs and developer tooling. RepoLensAI lets you drop a GitHub repository and get an intelligent breakdown of the entire codebase — powered by Groq's LLaMA-3 70B. It's the tool I wished existed when I was reading someone else's spaghetti code at 2am.",
 
-"Currently looking for a team that ships fast, argues about architecture, and actually uses the things they build. If that's you — let's talk.",
+"I also care about craft beyond the code. Maison Zeller — a cinematic luxury watch experience — is proof that a scroll event and the right font can make someone feel something. Good engineering should be invisible. Great design makes it unforgettable.",
+
+"IBM is the day job. Building things that matter is the obsession. If you want to collaborate, argue about architecture, or just chat — let's talk.",,
 ]
 
 function TypedLine({ text, delay }) {

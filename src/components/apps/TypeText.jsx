@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react"
 
 const lines = [
-  "Hi, I'm Devvrat Sharma.",
-  "An AI Full Stack Developer • MERN + AI Stack",
-  "Explore my projects, skills and experience in this interactive terminal-inspired portfolio.",
-  "Let's connect and build the future with AI! 🚀",
+  "Hi, i'm Devvrat Sharma.",
+  "Associate System Engineer @ IBM.",
+  "Oracle Cloud Middleware Domain.",
+  "Let's connect and build together.",
 ]
+
 
 export default function TypeIntro() {
   const [text, setText] = useState("")

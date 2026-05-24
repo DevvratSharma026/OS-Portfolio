@@ -73,6 +73,8 @@ export default function ResumeApp() {
         </Section>
 
         <Section title="Experience">
+          <Row left="IBM India — Associate System Engineer" right="Apr 2026 – Present"
+            sub="Oracle Cloud Middleware domain. Working with Oracle SOA Suite, WebLogic Server, and Oracle Integration Cloud at IBM BCIT, Bangalore." />
           <Row left="IBM — Data Science Apprenticeship" right="Jun 2023 - Aug 2023"
             sub="Completed a Data Science apprenticeship at IBM, learning Python fundamentals, data analysis, and data visualization. Worked with libraries like Matplotlib to analyze datasets and create basic visual insights." />
           <Row left="Bluestocks — Frontend Developer Intern" right="Jun 2025 - Aug 2025"
@@ -95,7 +97,7 @@ export default function ResumeApp() {
 
         <Section title="Skills">
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
-            {['Node.js', 'Express', 'React', 'MongoDB', 'AWS S3', 'Groq', 'LLaMA-3', 'Tailwind', 'Git', 'Multer', 'Postman', 'Vite','Authentication', 'GenAI'].map(function (sk) {
+            {['Node.js', 'Express', 'React', 'MongoDB', 'AWS S3', 'Groq', 'LLaMA-3', 'Tailwind', 'Git', 'Multer', 'Postman', 'Vite', 'Authentication', 'GenAI'].map(function (sk) {
               return (
                 <span key={sk} style={{
                   fontFamily: MONO, fontSize: '11px', padding: '3px 10px',
