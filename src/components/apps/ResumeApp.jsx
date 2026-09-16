@@ -73,8 +73,8 @@ export default function ResumeApp() {
         </Section>
 
         <Section title="Experience">
-          <Row left="IBM India — Associate System Engineer" right="Apr 2026 – Present"
-            sub="Oracle Cloud Middleware domain. Working with Oracle SOA Suite, WebLogic Server, and Oracle Integration Cloud at IBM BCIT, Bangalore." />
+          <Row left="IBM India — Application Developer" right="Apr 2026 – Present"
+            sub="Oracle Cloud Middleware domain. Working with Oracle Integration Cloud, BIP, Apex, VBCS, and Web services at Noida." />
           <Row left="IBM — Data Science Apprenticeship" right="Jun 2023 - Aug 2023"
             sub="Completed a Data Science apprenticeship at IBM, learning Python fundamentals, data analysis, and data visualization. Worked with libraries like Matplotlib to analyze datasets and create basic visual insights." />
           <Row left="Bluestocks — Frontend Developer Intern" right="Jun 2025 - Aug 2025"
