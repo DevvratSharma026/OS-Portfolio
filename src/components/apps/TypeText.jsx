@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react"
 
 const lines = [
-  "Hi, i'm Devvrat Sharma.",
-  "Associate System Engineer @ IBM.",
+  "Hi, I'm Devvrat Sharma.",
+  "Application Developer @ IBM.",
   "Oracle Cloud Middleware Domain.",
   "Let's connect and build together.",
 ]
